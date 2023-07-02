@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+* { font-family: 'Roboto Condensed', sans-serif; }
+
+body {
+    background-color: rgb(26, 26, 34);
+    margin: 0;
+    overflow-x: hidden;
+
+    display: flex;
+}
+
+.i-mr {
+    margin-right: 5px;
+}
+
+.scroll-hide {
+    opacity: 0;
+    transform: translateX(-5%);
+    transition: all 1s;
+}
+
+.scroll-show  {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.page-break {
+    width: 95%;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.page-break img {
+    width: 5%;
+    opacity: 0.5;
+}
+
+.pb-ln {
+    width: 30%; height: 2px;
+    background: white;
+    opacity: 0.05;
+}
+
+.pb-crl {
+    width: 10px; height: 10px;
+    background: white;
+    opacity: 0.1;
+    margin: 0px 10px;
+    border-radius: 50%;
+}
+
+#personal-div {
+    width: 100vw; height: 100vh;
+    display: flex; align-items: center;
+    overflow: hidden;
+    position: fixed;
+}
+
+#personal-info {
+    width: 20%; height: 95vh;
+    background-color: transparent;
+    margin-left: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.315);
+    border-radius: 20px;
+    position: fixed;
+
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+
+}
+
+#personal-info-header {
+    width: 100%;
+    margin-bottom: 30px;
+
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+
+}
+
+
+#personal-name {
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    letter-spacing: 5px;
+    /* margin-right: -25px; */
+}
+
+#personal-job {
+    color: rgba(255, 255, 255, 0.753);
+    font-size: 15px;
+    margin: 0;
+    letter-spacing: 4.7px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#personal-avatar {
+    width: 50%;
+    margin-bottom: 35px;
+}
+
+.spin {
+    animation: spin 1s;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+#personal-avatar:hover {
+    cursor: pointer;
+}
+
+#personal-info-location {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#personal-info-email {
+    color: rgba(255, 255, 255, 0.616);
+    /* margin-bottom: 20px; */
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#personal-info-social {
+    margin-bottom: 20px;
+}
+
+.personal-social {
+    width: 40px; height: 40px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.315);
+    border-radius: 50%;
+    color: white;
+    transition: .2s ease;
+}
+
+.personal-social:hover {
+    border: 2px solid rgb(0, 255, 149);
+    background: rgb(0, 255, 149);
+    color: black;
+    cursor: pointer;
+}
+
+#personal-info-contact {
+    width: 60%; height: 4%;
+    background: transparent;
+    border: 2px solid rgb(0, 255, 149);
+    color: white;
+    border-radius: 20px;
+    transition: .2s ease;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+}
+
+#personal-info-contact:hover {
+    border: 2px solid rgb(0, 255, 149);
+    background: rgb(0, 255, 149);
+    color: black;
+    cursor: pointer;
+}
+
+#info-div {
+    position: absolute;
+    margin-left: 25vw;
+    padding-bottom: 100px;
+    width: 75vw;
+}
+
+#info-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    /* border-radius: 50%; */
+    /* width: 50px; height: 50px; */
+    transition: .2s ease;
+}
+
+.info-btn-hover {
+    width: 150px; height: 50px;
+    border-radius: 40px;
+}
+
+.info-btn-unhover {
+    width: 50px; height: 50px;
+    border-radius: 50%;
+}
+
+#info-button:hover {
+    border: 2px solid rgb(0, 255, 149);
+    background: rgb(0, 255, 149);
+    color: black;
+    cursor: pointer;
+}
+
+#info-aboutme {
+    width: 95%;
+    margin: 60px 0px;
+    width: 95%;
+    display: flex; justify-content: center; align-items: center;
+}
+
+#info-about {
+    color: white;
+    text-align: center;
+}
+
+#info-header {
+    height: 100vh; width: 95%;
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+}
+
+#info-intro {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+    width: 95%;
+    text-align: center;
+}
+
+#info-skills {
+    width: 95%;
+    display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
+    gap: 4.5vh;
+    z-index: 99999;
+    margin-bottom: 60px;
+}
+
+.skill-card {
+    background-color: rgba(255, 255, 255, 0.02);
+    height: 30vh; width: 16vw;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    position: relative;
+}
+
+.skill-card::before {
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(88, 88, 88, 0.06), transparent 40%);
+    width: 100%; height: 100%;
+    position: absolute;
+    left: 0px; top: 0px;
+    content: "";
+    border-radius: inherit;
+    z-index: 2;
+}
+
+.skill-card:hover .skill-icon, .skill-card:hover .skill-icon-img {
+    opacity: 0.5;
+}
+
+.skill-info {
+    width: 100%; height: 100%;
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+}
+
+.skill-icon {
+    opacity: 0.3;
+    transition: .2s ease;
+}
+
+.skill-icon-img {
+    filter: invert(100%);
+    opacity: 0.3;
+    transition: .2s ease;
+    width: 35%;
+}
+
+.skill-name {
+    color: rgb(0, 255, 149);
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.skill-exp {
+    color: rgba(255, 255, 255, 0.705);
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+#experience-cards {
+    width: 95%;
+}
+
+.experience-card {
+    background-color: rgba(255, 255, 255, 0.02);
+    height: 15vh;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    position: relative;
+    display: flex; align-items: center;
+    margin-bottom: 30px;
+}
+
+.experience-card::before {
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(88, 88, 88, 0.06), transparent 40%);
+    width: 100%; height: 100%;
+    position: absolute;
+    left: 0px; top: 0px;
+    content: "";
+    border-radius: inherit;
+    z-index: 2;
+}
+
+.experience-info {
+    padding: 40px;
+    display: flex; align-items: center;
+}
+
+.experience-name {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+}
+
+.experience-title {
+    margin: 0;
+    color: white;
+    font-weight: normal;
+}
+
+.experience-time {
+    margin: 0;
+    color: gray;
+}
+
+#experience-skills {
+    position: absolute;
+    right: 40px;
+}
+
+.experience-icon {
+    opacity: 0.3;
+    transition: .2s ease;
+    font-size: 40px;
+    margin: 0px 10px;
+}
+
+.experience-icon-img {
+    width: 40px;
+    filter: invert(100%);
+    opacity: 0.3;
+    transition: .2s ease;
+    position: relative;
+    top: 3px;
+    margin: 0px 10px;
+}

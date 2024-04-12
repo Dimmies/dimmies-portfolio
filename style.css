@@ -10,6 +10,8 @@ body {
     display: flex;
 }
 
+a { color: inherit; } 
+
 .i-mr {
     margin-right: 5px;
 }
@@ -327,17 +329,20 @@ body {
     margin: 0;
     color: white;
     font-size: 30px;
+    padding-bottom: 2px;
 }
 
 .experience-title {
     margin: 0;
     color: white;
     font-weight: normal;
+    padding-bottom: 2px;
 }
 
 .experience-time {
     margin: 0;
     color: gray;
+    padding-bottom: 2px;
 }
 
 #experience-skills {

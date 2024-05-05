@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!-- FontAwesome -->
+            <script src="https://kit.fontawesome.com/900a453d48.js" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+            <title>Dylan Portfolio</title>
+
+            <link rel="stylesheet" href="./style.css">
+            <link rel="stylesheet" href="./fivem/fivem.css">
+            <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        </head>
+    <body>
+
+        <img id="shapes" src="./fivem/600x200.jpg">
+        <span id="page-title">DIMMIES FIVEM PORTFOLIO</span>
+        <img id="logo" src="./fivem/FiveM-Logo.png">
+
+        <div id="fullview">
+            <img id="fullview-img" src="./fivem/showcase/med_1.jpg">
+        </div>
+
+        <button onclick="ScrollToContent()" id="showcase-button"><i class="fa-solid fa-arrow-down"></i></button>
+
+        <div id="showcase">
+            <h2 class="showcase-title" style="margin-bottom: 100px;">SHOWCASE</h2>
+            
+            <!-- Multicharacter System -->
+            <h2 class="showcase-title">Multicharacter System</h2>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/multichar_v2_1.mp4" type="video/mp4" controls></video>
+            </div>
+            
+            <!-- Police Dispatch -->
+            <h2 class="showcase-title">Police Dispatch</h2>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell"><img src="./fivem/showcase/poldispatch_1.png"></div>
+                <div class="gallery-cell"><img src="./fivem/showcase/poldispatch_2.png"></div>
+                <div class="gallery-cell"><img src="./fivem/showcase/poldispatch_3.png"></div>
+            </div>
+
+            <!-- Medical -->
+            <h2 class="showcase-title">Advanced Medical System</h2>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell"><img src="./fivem/showcase/med_1.jpg"></div>
+                <div class="gallery-cell"><img src="./fivem/showcase/med_2.png"></div>
+                <div class="gallery-cell"><img src="./fivem/showcase/med_3.png"></div>
+                <div class="gallery-cell"><img src="./fivem/showcase/med_4.jpeg"></div>
+                <div class="gallery-cell"><img src="./fivem/showcase/med_5.png"></div>
+            </div>
+
+            <!-- Dialogue -->
+            <h2 class="showcase-title">NPC Dialogue System</h2>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/dialogue.mp4" type="video/mp4" controls></video>
+            </div>
+
+            <!-- Trading Cards -->
+            <h2 class="showcase-title">Trading Cards System</h2>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/trading_cards_1.mp4" type="video/mp4" controls></video>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/trading_cards_2.mp4" type="video/mp4" controls></video>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/trading_cards_3.mp4" type="video/mp4" controls></video>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/trading_cards_4.mp4" type="video/mp4" controls></video>
+            </div>
+
+            <!-- Player Owned Business -->
+            <h2 class="showcase-title">Player Owned Business System</h2>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/pob_1.mp4" type="video/mp4" controls></video>
+                <div class="gallery-cell"><img src="./fivem/showcase/pob_2.jpg"></div>
+            </div>
+
+            <!-- Bennys -->
+            <h2 class="showcase-title">Bennys</h2>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/bennys_1.mp4" type="video/mp4" controls></video>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/bennys_2.mp4" type="video/mp4" controls></video>
+            </div>
+
+            <!-- Count Hack -->
+            <h2 class="showcase-title">Count Hack Minigame</h2>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/counthack.mp4" type="video/mp4" controls></video>
+            </div>
+
+            <!-- Points Shop -->
+            <h2 class="showcase-title">Points Shop</h2>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/points_shop.mp4" type="video/mp4" controls></video>
+            </div>
+
+            <!-- Housing Decoration -->
+            <h2 class="showcase-title">Housing Decoration</h2>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/housing_1.mp4" type="video/mp4" controls></video>
+            </div>
+
+            <!-- Snr Buns -->
+            <h2 class="showcase-title">Snr. Buns Job (unfinished)</h2>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/snrbuns_1.mp4" type="video/mp4" controls></video>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/snr_buns_2.mp4" type="video/mp4" controls></video>
+            </div>
+
+
+
+            <!-- Inventory -->
+            <h2 class="showcase-title">Inventory System</h2>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/exo_inv_1.mp4" type="video/mp4" controls></video>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/exo_inv_2.mp4" type="video/mp4" controls></video>
+                <div class="gallery-cell"><img src="./fivem/showcase/exo_inv_3.jpg"></div>
+                <div class="gallery-cell"><img src="./fivem/showcase/exo_inv_4.png"></div>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/exo_inv_5.mp4" type="video/mp4" controls></video>
+            </div>
+
+            <!-- Base Building -->
+            <h2 class="showcase-title">Base Building System</h2>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/building_1.mp4" type="video/mp4" controls></video>
+            </div>
+
+            <!-- Quests -->
+            <h2 class="showcase-title">Advanced Quests System</h2>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell"><img src="./fivem/showcase/quests_1.png"></div>
+            </div>
+
+            <!-- Records -->
+            <h2 class="showcase-title">Records System</h2>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell"><img src="./fivem/showcase/records_1.jpg"></div>
+                <div class="gallery-cell"><img src="./fivem/showcase/records_2.png"></div>
+                <div class="gallery-cell"><img src="./fivem/showcase/records_3.jpg"></div>
+                <div class="gallery-cell"><img src="./fivem/showcase/records_4.png"></div>
+            </div>
+
+            <div style="min-height: 1px; width: 100vw;"> </div>
+
+        </div>
+
+        <script src="./fivem/fivem.js"></script>
+    </body>
+</html>

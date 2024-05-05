@@ -401,3 +401,9 @@ a { color: inherit; }
     opacity: 1;
     transform: translate(0, 0);
 }
+
+.experience-card:hover .practice-view-text {
+    /* display: block; */
+    opacity: 1;
+    transform: translate(0, 0);
+}

@@ -56,6 +56,21 @@ body {
     text-align: center;
     font-size: 30px;
     margin: 0;
+    margin-bottom: 20px;
+}
+
+.learn-more, .close-info {
+    margin-left: 10px;
+    background-color: #ffa66c;
+    border-radius: 50px;
+    padding: 5px 10px;
+    border: none;
+    transition: .2s ease;
+}
+
+.learn-more:hover, .close-info:hover {
+    cursor: pointer;
+    transform: scale(0.98);
 }
 
 .showcase-desc {
@@ -99,4 +114,27 @@ body {
 
 .gallery-cell > video {
     max-width: 100%; max-height: 100%;
+}
+
+.arp-info {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; min-height: 50%;
+    background: #1a1a22;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    color: white;
+
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+    white-space: break-spaces;
+    overflow-y: auto;
+    padding: 30px;
+
+}
+
+.close-info {
+
 }

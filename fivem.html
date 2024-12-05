@@ -30,6 +30,12 @@
 
         <div id="showcase">
             <h2 class="showcase-title" style="margin-bottom: 100px;">SHOWCASE</h2>
+
+            <!-- ARP Inventory -->
+            <h2 class="showcase-title" style="display: flex; align-items: center; justify-content: center;">Inventory System <button class="learn-more">Learn More</button></h2>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <video width="1250", height="550" class="gallery-vid" src="./fivem/showcase/arp_inv.mp4" type="video/mp4" controls></video>
+            </div>
             
             <!-- Multicharacter System -->
             <h2 class="showcase-title">Multicharacter System</h2>
@@ -144,6 +150,24 @@
 
             <div style="min-height: 1px; width: 100vw;"> </div>
 
+        </div>
+
+        <div class="arp-info">This inventory was made from scratch with enhanced security and optimization in mind. It wasn't completely finished, but this is just some of the things the inventory featured:
+
+    • Item Rarities (no specific use, just helps show the player what items are more rare)
+    • Item Metadata (information for each item, ex: how much water is in a specific water bottle item or how much ammo is in a specific weapon)
+    • Item Stacking
+    • Splitting (Hold Left shift and drag to another slot)
+        • Also splitting to another stack. Meaning if you split to an existing stack of that item, it'll just stack instead of just erroring
+    • Trunks and Gloveboxes
+    • Including some model dimension math to make it easier to find the trunk (or frunk) of vehicles so you hopefully wont have to stand beside a big truck to open the trunk
+    • Dynamic Containers (for example, the package item in the video opens a inventory specifically bound to that item)
+    • Client/Server Inventory data caching (this makes it so we don't have to fetch inventory information from the database every time we need it = more efficient. Client handles visual stuff, server handles logical stuff = More efficient AND more secure)
+    • Cache Purging (This gets rid of inventories that haven't been accessed in a while from the cache. If we need them again, we'll call the database. This will help free up some server memory.)
+    • Batch/Triggered Saving (We only save the inventory in batches OR when something happens)
+        • In many other inventory systems on FiveM, when you do something like move an item, it immediately saves the inventory to the database.. this is incredibly inefficient. So instead, the way this inventory works is, a batch save is triggered every so often (probably every few minutes). So when you do something (like move an item) it flags the inventory to be saved and during the next batch save, it gets saved to the database. This is great when you're moving a bunch of items around. Instead of individual database calls every time you move an item, it groups all of those changes up then makes 1 database call during the batch save.
+        • It also will save inventories when the player closes the inventory as well as other events like the player disconnecting etc.
+        <button class="close-info">Close</button>
         </div>
 
         <script src="./fivem/fivem.js"></script>

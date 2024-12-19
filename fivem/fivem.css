@@ -138,3 +138,10 @@ body {
 .close-info {
 
 }
+
+#stolen-note {
+    color: wheat;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
